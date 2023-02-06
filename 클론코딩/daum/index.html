@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>다음</title>
+    <link href="./index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header class="flex">
+        <div id="logo">
+            <h1>
+                <img src="./img/logo.jpg" alt="logo" />
+            </h1>
+        </div>
+        <div class="search">
+            <div id="search_background">
+                <div id="search">
+                    <input type="search" >
+                    <button type="button" id="search_key"></button>
+                    <button typue="submit" id="search_icon"></button>
+                </div>
+            </div>
+            <div id="word">
+                <ul class="flex">
+                    <li><a href="#">시청률 순위</a></li>
+                    <li><a href="#">불후의명곡 김연자</a></li>
+                    <li><a href="#">스리랑카 병력감축</a></li>
+                    <li><a href="#">배틀트립 문별 솔라</a></li>
+                    <li><a href="#">놀토 풍자</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <img src="./img/계정통합.png" alt="계정통합해도 늘 쓰던 Daum 그대로!">
+        </div>
+    </header>
+    <nav class="flex" id="gnb_line">
+        <ul class="flex" id="gnb">
+            <li><a href="#">카페</a></li>
+            <li><a href="#">메일</a></li>
+            <li><a href="#">뉴스</a></li>
+            <li><a href="#">지도</a></li>
+            <li><a href="#">증권</a></li>
+            <li><a href="#">쇼핑</a></li>
+            <li><a href="#">카카오TV</a></li>
+            <li><a href="#">웹툰</a></li>
+            <li><a href="#">캘린더</a></li>
+            <li><a href="#">브런치</a></li>
+            <li><a href="#">사전</a></li>
+            <li><a href="#">게임</a></li>
+            <li><a href="#">같이가치</a></li>
+            <li><a href="#">더보기</a></li>
+        </ul>
+        <ul class="flex" id="weather">
+            <li><a href="#">01. 14.(토)</a></li>
+            <li><a href="#">인천광역시</a></li>
+            <li>
+                <a href="#">
+                    <img src="" alt="" />
+                </a>
+            </li>
+            <li><a href="#">4 c</a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </nav>
+    <div class="flex" id="contents_line">
+        <section id="contents">
+            <div id="advertisement">
+                <img src="./img/img2.jpg" alt="" />
+            </div>
+            <article>
+                <nav class="flex">
+                    <ul class="flex">
+                        <li><a href="#">뉴스</a></li>
+                        <li><a href="#">연예</a></li>
+                        <li><a href="#">스포츠</a></li>
+                        <li><a href="#">영화</a></li>
+                        <li><a href="#">자동차</a></li>
+                        <li><a href="#">부동산</a></li>
+                    </ul>
+                    <ul class="flex">
+                        <li><a href="#">1/7</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </nav>
+                <div class="flex">
+                    <ul class="preview">
+                        <li>
+                            <img src="./img/vita500.jpg" alt="" />
+                        </li>
+                        <li>비타500</li>
+                    </ul>
+                    <ul class="preview">
+                        <li>
+                            <img src="./img/vita500.jpg" alt="" />
+                        </li>
+                        <li>비타500</li>
+                    </ul>
+                    <ul class="press">
+                        <li>
+                            <a href="#">겨울비가 하루만에 폭설로 강원 동해안 눈폭탄 비상</a>
+                        </li>
+                        <li>
+                            <a href="#">안철수, '김기현>나경원' 여론조사 논란에 "진위 밝힐 필요가 없다"</a>
+                        </li>
+                        <li>
+                            <a href="#">"누구한테 왔지?" 우편물 뜯었다가... '편지개봉' 현의 전과자로 낙인</a>
+                        </li>
+                        <li>
+                            <a href="#">자도 자도 피곤할 때, 손톱으로 피부 듥어봐야 하는 이유</a>
+                        </li>
+                        <li>
+                            <a href="#">영국, 우크라에 챌린저2 탱그 보낸다... 서방서 첫 주력전차 지원사격</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="flex">
+                        <ul class="preview">
+                            <li>
+                                <img src="./img/vita500.jpg" alt="" />
+                            </li>
+                            <li>비타500</li>
+                        </ul>
+                        <ul class="preview">
+                            <li>
+                                <img src="./img/vita500.jpg" alt="" />
+                            </li>
+                            <li>비타500</li>
+                        </ul>
+                        <ul class="press">
+                            <li>
+                                <a href="#">중 "한달간 병원 내 코로나 사망자 6만명"... 자택 사례는 미포함</a>
+                            </li>
+                            <li>
+                                <a href="#">광주 당려간 박지원, DJ 회상 하며 "현 정부 향해, 담벼락에 벽화를 직접 그리다"</a>
+                            </li>
+                            <li>
+                                <a href="#">나경원 측,'김기현 1위'여론조사에 "신뢰성 의문... 선거법 다시 검토해봐야 할 것"</a>
+                            </li>
+                            <li>
+                                <a href="#">목에 뭔가 걸렸다, 혼자다...'하임리히법' 가능할까?</a>
+                            </li>
+                            <li>
+                                <a href="#">50년 된 '원삼탕'도 문받앗는데 코로나로 손님 '뚝'</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex">
+                        <ul class="preview">
+                            <li>
+                                <img src="./img/vita500.jpg" alt="" />
+                            </li>
+                            <li>비타500</li>
+                        </ul>
+                        <ul class="preview">
+                            <li>
+                                <img src="./img/vita500.jpg" alt="" />
+                            </li>
+                            <li>비타500</li>
+                        </ul>
+                        <ul class="press">
+                            <li>
+                                <a href="#">민주당 "이재명 변호사비 대납 가짜 뉴스 중단해라"</a>
+                            </li>
+                            <li>
+                                <a href="#">강원 영동 등 대성 특보... 내일까지 70cm 이상 눈 예보</a>
+                            </li>
+                            <li>
+                                <a href="#">'무역흑자 1위' 베트남.. 올해도 고도성장 기대감</a>
+                            </li>
+                            <li>
+                                <a href="#">미 '해임'으로 빗장.. 나경원의 좁아진 선택지</a>
+                            </li>
+                            <li>
+                                <a href="#">"낮잠, 엄마랑 자고 싶어요" 보챈 3살 아들 멍들 만큼 뺨 때려 아동 폭행죄</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <div class="flex" id="new_nav">
+                <ul class="flex">
+                    <li>뉴스홈></li>
+                    <li>사회</li>
+                    <li>정치</li>
+                    <li>경제</li>
+                    <li>국제</li>
+                    <li>문화</li>
+                    <li>IT</li>
+                </ul>
+                <ul class="flex">
+                    <li>코스피</li>
+                    <li>환율</li>
+                    <li>오늘의운세</li>
+                    <li>TV편성</li>
+                </ul>
+            </div>
+            <hr/>
+            <div id="tv">
+                <div class="flex" id="tv_nav">
+                    <ul class="flex">
+                        <li>카카오TV</li>
+                        <li>오리지널 콘텐츠</li>
+                        <li>TV주요장면</li>
+                        <li>많이본TV</li>
+                    </ul>
+                    <ul class="flex">
+                        <li>1</li>
+                        <li>/</li>
+                        <li>3</li>
+                    </ul>
+                </div>
+                <div class="flex" id="tv_viw">
+                    <ul>
+                        <li>
+                            <img src="./img/vita500.jpg" alt="" />
+                        </li>
+                        <li>[풀버전/데스매치]하이루</li>
+                        <li>- Abracadabra | 소녀</li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="./img/vita500.jpg" alt="" />
+                        </li>
+                        <li>[미공개/데스매치]뚱냥이</li>
+                        <li>- Tired of love +</li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="./img/vita500.jpg" alt="" />
+                        </li>
+                        <li>[미공개/데스매치]화의자</li>
+                        <li>- _사랑했잖아.. + 에잇</li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="./img/vita500.jpg" alt="" />
+                        </li>
+                        <li>W세계 노래 강자들의</li>
+                        <li>맞대결</li>
+                    </ul>
+                </div>
+            </div>
+            <hr/>
+            <div id="story">
+                <div class="flex" id="story_nav">
+                    <ul class="flex">
+                        <li>카페</li>
+                        <li>브런치</li>
+                        <li>티스토리</li>
+                        <li>카카오스토리</li>
+                    </ul>
+                    <ul class="flex">
+                        <li>1</li>
+                        <li>/</li>
+                        <li>3</li>
+                    </ul>
+                </div>
+                <div class="flex" id="story_viw">
+                    <ul>
+                        <li>
+                            <img src="./img/vita500.jpg" alt="" />
+                        </li>
+                        <li>롯데월드에 도시락</li>
+                        <li>싸가자는 말이 심한가요</li>
+                        <li>도탁스 (DOTAX)</li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="./img/vita500.jpg" alt="" />
+                        </li>
+                        <li>암살 시도하는</li>
+                        <li>사촌동생.jpg</li>
+                        <li>도탁스 (DOTAX)</li>
+                    </ul>
+                    <div>
+                        <p>곰돌이 눈사람 ㄷㄷ</p>
+                        <p>만사가 귀찮다</p>
+                        <p>강쥐 답답할까봐 만들어 줌</p>
+                        <p>동생 암살 실패</p>
+                        <p>외출계회 짜는 내향인.jpg</p>
+                        <p>김종국이 환장하는 조합인 조규성</p>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div id="infor">
+                <div class="flex" id="infor_nav">
+                    <ul class="flex">
+                        <li>홈&쿠킹</li>
+                        <li>머니</li>
+                        <li>동물</li>
+                        <li>스타일</li>
+                        <li>M+</li>
+                        <li>여행맛집</li>
+                        <li>직장IN</li>
+                        <li>뮤직</li>
+                        <li>웹툰</li>
+                        <li>게임</li>
+                        <li>같이가치</li>
+                    </ul>
+                    <ul class="flex">
+                        <li>1</li>
+                        <li>/</li>
+                        <li>3</li>
+                    </ul>
+                </div>
+                <div class="flex" id="infor_viw">
+                    <div id="infor_big_img">
+                        <img src="./img/vita500.jpg" alt="" />
+                        <p>브런치 by 차밍준마<br/>배우 '송승헌'을 무릎 꿇게 만든 태국 공주</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <img src="./img/vita500.jpg" alt="" />
+                        </li>
+                        <li>여자 혼자 케냐 여행 안전 한가요?</li>
+                        <li>브런치 by 노매드헐</li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="./img/vita500.jpg" alt="" />
+                        </li>
+                        <li>곧 만기이신 분 지금 바로 조회해 보세요!</li>
+                        <li>DB손해보험 다이렉트</li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="./img/vita500.jpg" alt="" />
+                        </li>
+                        <li>일본 도쿄 롯폰기 맛집 '부타구미' 돈가스 방문 후기</li>
+                        <li>티스토리 - 뭐라도알려드려요</li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="./img/vita500.jpg" alt="" />
+                        </li>
+                        <li>삼척의 반짝임에 스며들다, 도계 유리나라</li>
+                        <li>삼척시</li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="./img/vita500.jpg" alt="" />
+                        </li>
+                        <li>쫄깃한 뽈상 순댓국 맛집 청담순대국 청담 1호점</li>
+                        <li>티스토리 - 오로지 내돈내먹</li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="./img/vita500.jpg" alt="" />
+                        </li>
+                        <li>일산 돼지갈비 맛집 연잎갈비 소고기 저렴한집</li>
+                        <li>티스토리 - 금초의 일상 맛집 소개</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <p>베스트</p>
+                <div class="flex">
+                    <div>
+                        <img src="./img/img2.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="./img/img2.jpg" alt="" />
+                    </div>
+                    <div>
+                        <ul>
+                            <li>로마에선 소매치기 조심하라더니.. 차.. 유리찬이 부셔졌다..</li>
+                            <li>빵덕후 사이에 맛있다고 소문나 중 서서 먹는 빵</li>
+                            <li>BTS와 현빈을 빽으로 둔 유학생활</li>
+                            <li>속초에서의 삼시세끼</li>
+                            <li>"5성급 객실이 10만원도 안되면.." 고물가시대 '그 끝은 어디인지'</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside>
+            <section id="user">
+                <div class="flex user_top">
+                    <div>
+                        <img src="./img/user_icon.png" alt="" />
+                    </div>
+                    <div>
+                        <div id="user_name">
+                            <ul class="flex">
+                                <li>한지훈님</li>
+                                <li><button>로그아웃</button></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="flex">
+                                <li>메일<span>99+</span></li>
+                                <li>카페쪽지</li>
+                                <li>티스토리</li>
+                                <li>캘린더</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ul class="flex user_bottom">
+                        <li><a href="">카페</a></li>
+                        <li><a href="">증권</a></li>
+                        <li><a href="">블로그</a></li>
+                    </ul>
+                </div>
+            </section>
+            <div class="flex" id="sale">
+                <div>
+                    <img src="./img/img2.jpg" alt="" />
+                </div>
+                <div>
+                    <p>제발 쌀 때 사십시오. 최대 50만원 쿠폰</p>
+                    <button>바로가기</button>
+                </div>
+            </div>
+            <div id="shopping">
+                <div id="shopping_nav" class="flex">
+                    <p>쇼핑></p>
+                    <ul class="flex">
+                        <li>G마켓</li>
+                        <li>옥션</li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#">하프클럽</a>
+                    <a href="#">쿠팡</a>
+                    <a href="#">11번가</a>
+                    <a href="#">GS샵</a>
+                    <a href="#">패션플러스</a>
+                </div>
+                <div id="next_page">
+                    <ul class="flex">
+                        <li><a href="">1</a></li>
+                        <li><a href="">/</a></li>
+                        <li><a href="">11</a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
+                <div id="shopping_list" class="flex">
+                    <ul>
+                        <a href="#">
+                            <li>
+                                <img src="./img/img2.jpg" alt="" />
+                            </li>
+                            <li>이렇게 이쁜데 퀄리티 대박!</li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="#">
+                            <li>
+                                <img src="./img/img2.jpg" alt="" />
+                            </li>
+                            <li>UPTO ~ 70% 페인팅자카드니트</li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="#">
+                            <li>
+                                <img src="./img/img2.jpg" alt="" />
+                            </li>
+                            <li>시즌오프 sale 코디그대로인기</li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="#">
+                            <li>
+                                <img src="./img/img2.jpg" alt="" />
+                            </li>
+                            <li>브랜드 고르웨어 최대 91%</li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="#">
+                            <li>
+                                <img src="./img/img2.jpg" alt="" />
+                            </li>
+                            <li>눈썹 다듬기 자신있습니다!</li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="#">
+                            <li>
+                                <img src="./img/img2.jpg" alt="" />
+                            </li>
+                            <li>말랑쫀득촉촉다해 30 + 30 + 쿠폰</li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="#">
+                            <li>
+                                <img src="./img/img2.jpg" alt="" />
+                            </li>
+                            <li>지금 반응 좋아 예쁜 데일리룩</li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="#">
+                            <li>
+                                <img src="./img/img2.jpg" alt="" />
+                            </li>
+                            <li>아삭아삭달콤시원 이거 전부 1만원대</li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="#">
+                            <li>
+                                <img src="./img/img2.jpg" alt="" />
+                            </li>
+                            <li>달콤~ 딸기케이크 20% 즉시할인!</li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="#">
+                            <li>
+                                <img src="./img/img2.jpg" alt="" />
+                            </li>
+                            <li>루이비통삭플라 지금이 기회야!</li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="#">
+                            <li>
+                                <img src="./img/img2.jpg" alt="" />
+                            </li>
+                            <li>새해맞이 초특가 최대 91% OFF</li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="#">
+                            <li>
+                                <img src="./img/img2.jpg" alt="" />
+                            </li>
+                            <li>맥주효모 48만 덜빠져! 임상확인</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div id="shopping_sale">
+                <div class="flex" id="shopping_sale_page">
+                    <p>쇼핑몰 할인특가</p>
+                    <ul class="flex">
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">/</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="flex" id="shopping_sale_topline">
+                    <p>지마켓 - 슈퍼딜 추천 상품</p>
+                    <a href="#">바로가기</a>
+                </div>
+                <div id="shopping_sale_list">
+                    <div>
+                        <a href="#" class="flex">
+                            <div>
+                                <img src="./img/img2.jpg" alt="" />
+                            </div>
+                            <ul>
+                                <li>[22%] 알마니 디젤 파슬 주얼리/시계 여름 BEST</li>
+                                <li>103,750원</li>
+                            </ul>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="flex">
+                            <div>
+                                <img src="./img/img2.jpg" alt="" />
+                            </div>
+                            <ul>
+                                <li>데일리 바디로션 400ml 2개 + 튜브견본 2개</li>
+                                <li>18,770원</li>
+                            </ul>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="flex">
+                            <div>
+                                <img src="./img/img2.jpg" alt="" />
+                            </div>
+                            <ul>
+                                <li>통통하고 매콤한 낙지볶음(낙지+양념장) 400gx3팩 묶음/ 아빠식당</li>
+                                <li>17,770원</li>
+                            </ul>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="flex">
+                            <div>
+                                <img src="./img/img2.jpg" alt="" />
+                            </div>
+                            <ul>
+                                <li>실크리페어 시그니처 550ml 샴푸 2개 + 컨디 1개</li>
+                                <li>11,900원</li>
+                            </ul>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="flex">
+                            <div>
+                                <img src="./img/img2.jpg" alt="" />
+                            </div>
+                            <ul>
+                                <li>청도 반건시 곶감 선물세트 20입 (50g/소과)/선물용가방 //예약발송 가능//</li>
+                                <li>23,900원</li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
