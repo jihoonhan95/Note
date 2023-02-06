@@ -1,0 +1,72 @@
+@charset "utf-8";
+@import "./reset.css";
+body{background-color:#000; padding:10px;}
+
+.flex{
+    display:flex;
+    flex-flow:wrap row;
+}
+.wrap{
+    max-width:1440px;
+    margin:0 auto;
+}
+#menu:hover,#logo:hover,#search_icon:hover,#voice:hover,#plus:hover,#alarm:hover,#user:hover{cursor:pointer;}
+
+
+/* header 영역 */
+.header{
+    justify-content:space-between;
+    height:50px;
+}
+.menu_bar{width:13%;height:100%; align-items: center;}
+
+#menu>span{
+    display:block;
+    background-color:#fff;
+    width:25px;
+    height:5px;
+    text-indent:-9999px;
+    margin-top:5px;
+}
+#menu>span:nth-child(1){margin: 0;}
+#menu{width:20%;}
+#logo{width:80%; height:100%; align-items:center;}
+#logo>img{width:30%; height:60%;}
+
+#logo>h2{
+    color:#fff;
+    vertical-align: middle;
+    font-size:18px;
+    font-weight:800;
+    margin-left:2px;
+}
+
+#search_background{width:50%; height:100%; align-items: center; }
+
+#search_contens{
+    width:80%; height:80%;
+    border:1px solid #333;
+    border-radius:40px;
+    align-items: center;
+    justify-content: space-around;
+}
+#search_contens>#search{width:88%; height:80%; padding:1.7% 0 0 1.5%;}
+#search_contens>#search>input{width:93%; background-color:#000; border:none; color:#fff;}
+#search_contens>#search>input:focus{outline:none;}
+#search_contens>#search>a{width:5%; height:100%; display:inline-block;}
+#search_contens>#search>a>img{width:100%; display:inline-block; vertical-align: middle;}
+
+#search_contens>#search_icon{width:10%; height:100%; border-left:1px solid #333;}
+#search_contens>#search_icon img{width:45%; display:block; padding:10% 0 0 15%;}
+
+
+#voice{width:7%; height:100%;  margin-left:10px; background-color:#333;
+    border-radius:100%;}
+#voice img{width:20px; padding:11px 0 0 14px;}
+
+#user_contens{width:10%; height:100%;}
+#user_contens>div{width:30%; height:100%;}
+#user_contens>div>img{width:50%;}
+#user_contens>div#plus>img{padding:18px 0 0 12px;}
+#user_contens>div#alarm>img{padding:14px 0 0 10px;}
+#user_contens>div#user{background-color:#333; border-radius: 100%;}
