@@ -14,10 +14,7 @@ body{background-color:#000; padding:10px;}
 
 
 /* header 영역 */
-.header{
-    justify-content:space-between;
-    height:50px;
-}
+.header{justify-content:space-between; height:50px;}
 .menu_bar{width:13%;height:100%; align-items: center;}
 
 #menu>span{
@@ -32,7 +29,6 @@ body{background-color:#000; padding:10px;}
 #menu{width:20%;}
 #logo{width:80%; height:100%; align-items:center;}
 #logo>img{width:30%; height:60%;}
-
 #logo>h2{
     color:#fff;
     vertical-align: middle;
@@ -59,14 +55,23 @@ body{background-color:#000; padding:10px;}
 #search_contens>#search_icon{width:10%; height:100%; border-left:1px solid #333;}
 #search_contens>#search_icon img{width:45%; display:block; padding:10% 0 0 15%;}
 
+/* voice 영역 */
+#voice{width:5%; height:70%; margin-left:10px; background-color:#333; border-radius:50%;}
+#voice img{width:15px; padding:7px 0 0 10px;}
 
-#voice{width:7%; height:100%;  margin-left:10px; background-color:#333;
-    border-radius:100%;}
-#voice img{width:20px; padding:11px 0 0 14px;}
-
+/* user 영역 */
 #user_contens{width:10%; height:100%;}
 #user_contens>div{width:30%; height:100%;}
 #user_contens>div>img{width:50%;}
 #user_contens>div#plus>img{padding:18px 0 0 12px;}
 #user_contens>div#alarm>img{padding:14px 0 0 10px;}
 #user_contens>div#user{background-color:#333; border-radius: 100%;}
+
+/* header 영역 끝 */
+
+/* aside 영역 */
+
+aside{color:#fff;}
+aside>div{height:20px;}
+aside>div>ul>li:first-child{width:40%;}
+aside>div>ul>li:last-child{width:60%;}
